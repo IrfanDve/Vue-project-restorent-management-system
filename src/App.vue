@@ -1,16 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- Include the SignUp Component -->
+    <!-- <SignUpForm /> -->
+     <router-view/>
+      <!-- <h1>hello</h1> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import SignUpForm from './components/SignUpForm.vue'; 
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  // components: {
+  //   SignUpForm,
+  // },
 }
 </script>
 
