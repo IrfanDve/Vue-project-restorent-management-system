@@ -1,7 +1,7 @@
 import HomePage from "./components/HomePage.vue";
 import SignUpForm from "./components/SignUpForm.vue";
 import { createRouter, createWebHistory } from "vue-router";
-
+import LoginForm from "./components/LoginForm.vue";
 const routes = [ // Corrected from 'routers' to 'routes'
     {
         name: "HomePage", // Corrected typo from "Home-pagme"
@@ -12,6 +12,11 @@ const routes = [ // Corrected from 'routers' to 'routes'
         name: "SignUp",
         component: SignUpForm,
         path: "/sign-up" // Added a leading slash for consistency
+    },
+    {
+        name: "LoginForm",
+        component: LoginForm,
+        path: "/login" // Added a leading slash for consistency
     }
 ];
 
