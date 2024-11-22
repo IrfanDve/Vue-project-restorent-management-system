@@ -29,12 +29,12 @@ export default {
         Password: this.Password
       });
 
-      console.warn(result);
-      if (result.status == 200) {
+      // console.warn(result);
+      if (result) {
         alert('SignUp Successfully!');
         localStorage.setItem("user-Info",JSON.stringify(result.data));
         console.log(this.$router); // Ensure this logs the router instance
-        this.$router.push({ name: 'Home-page' });
+        this.$router.push({ name: 'HomePage' });
 
 
       }
@@ -45,6 +45,13 @@ export default {
     }
       
       
+    }
+  },
+  //life-cycle-hook same like the method but have some different used case 
+  mounted() {
+    let user=localStorage.getItem('user-Info');
+    if(user){
+      this.$router.push({ name: 'HomePage' });
     }
   },
 }
