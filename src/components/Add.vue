@@ -1,22 +1,16 @@
 <template>
     <HeaderComp />
-    <h1>{{name}} Wellcome to Home Page</h1>
+    <h1>Wellcome to Add Resturent page</h1>
 </template>
 <script>
 import HeaderComp from './Header.vue';
 export default{
-    name:'Home-page',
-    data() {
-      return {
-        name:'',
-      }
-    },
+    name:'Add-Resturant',
     components:{
         HeaderComp
     },
     mounted() {
     let user=localStorage.getItem('user-Info');
-    this.name=JSON.parse(user).name
     if(!user){
       this.$router.push({ name: 'SignUp' });
     }
