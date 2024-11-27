@@ -27,7 +27,7 @@ const routes = [ // Corrected from 'routers' to 'routes'
     {
         name: "Update",
         component: Update,
-        path: "/update" // Added a leading slash for consistency
+        path: "/update/:id" // Added a leading slash for consistency
     }
 ];
 

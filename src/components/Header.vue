@@ -3,7 +3,6 @@
         <!-- <a rou href="#">Home</a> -->
         <router-link to="/">Home</router-link>
         <router-link to="/add">Add Resturent</router-link>
-        <router-link to="/update">Edit Resturent</router-link>
         <a v-on:click="logout" href="#">Logout</a>
     </div>
 </template>
